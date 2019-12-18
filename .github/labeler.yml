@@ -1,0 +1,8 @@
+# Add 'repo' label to any root file changes
+ROOT!:
+  - ./*
+SCRIPTS:
+  - ./scripts/*
+ACTIONS:
+  - ./.github/workflows/*
+
