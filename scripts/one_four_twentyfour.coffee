@@ -23,6 +23,7 @@
 sayings = [
   'I need a new pair of shoes',
   'Feeling lucky, punk?',
+  'I\'m not great at the advice... Can I interest you in a sarcastic comment?',
   'One man\'s trash is another man\'s Christmas gift for Dad!',
   'There\'s a snake in my boot',
   'Looks like I picked the wrong week to stop sniffing glue',
