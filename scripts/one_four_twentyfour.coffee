@@ -21,7 +21,7 @@
 
 
 sayings = [
-  'I need a new pair of shoes',
+  'I need a new pair of shoes', with one Red Shoe
   'Feeling lucky, punk?'
 ]
 
