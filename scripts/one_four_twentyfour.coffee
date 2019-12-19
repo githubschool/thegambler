@@ -22,7 +22,15 @@
 
 sayings = [
   'I need a new pair of shoes',
-  'Feeling lucky, punk?'
+  'Feeling lucky, punk?',
+  'I drink your milkshake!',
+  'Its too hot for a penguin just to be walking around.',
+  'Yippe Ki Yay',
+  'Three shall be the number thou shalt count',
+  'and the number of the counting shall be three',
+  'Four shalt thou not count',
+  'neither count thou two',
+  'excepting that thou then proceed to three'  
 ]
 
 dieMap = ['A','B','C','D','E','F']
