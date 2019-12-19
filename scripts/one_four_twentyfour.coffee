@@ -22,7 +22,8 @@
 
 sayings = [
   'I need a new pair of shoes',
-  'Feeling lucky, punk?'
+  'Feeling lucky, punk?',
+  'Nor Mars his sword nor war\'s quick fire shall burn'
 ]
 
 dieMap = ['A','B','C','D','E','F']
