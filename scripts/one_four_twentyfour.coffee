@@ -24,6 +24,7 @@ sayings = [
   'I need a new pair of shoes',
   'Feeling lucky, punk?',
   'Nor Mars his sword nor war\'s quick fire shall burn'
+  'Some new random line',
   'Money trees are the perfect place for shade',
   'Time to bisect',
   'git bisect: sect so good they named it twice'
