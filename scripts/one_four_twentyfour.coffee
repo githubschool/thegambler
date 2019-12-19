@@ -22,7 +22,8 @@
 
 sayings = [
   'I need a new pair of shoes',
-  'Feeling lucky, punk?'
+  'Feeling lucky, punk?',
+  'I\'m not great at the advice... Can I interest you in a sarcastic comment?'
 ]
 
 dieMap = ['A','B','C','D','E','F']
