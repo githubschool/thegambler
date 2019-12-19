@@ -48,3 +48,7 @@ You got to know when to hold 'em, know when to fold 'em<br>
 Know when to walk away and know when to run<br>
 You never count your money when you're sittin' at the table<br>
 There'll be time enough for countin' when the dealing's done<br>
+
+![Kendrick](assets/images/kendrick.jpg)
+In 2012 The gambler was remade with a modern flair.
+It was called "Money Trees", The lyrics are not safe for work but we can all agree that money trees are the perfect place for shade.
