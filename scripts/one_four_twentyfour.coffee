@@ -23,6 +23,8 @@
 sayings = [
   'I need a new pair of shoes',
   'Feeling lucky, punk?',
+  'There\'s a snake in my boot'
+  'Looks like I picked the wrong week to stop sniffing glue',
   'I drink your milkshake!',
   'Its too hot for a penguin just to be walking around.',
   'Yippe Ki Yay',
