@@ -23,7 +23,8 @@
 sayings = [
   'I need a new pair of shoes',
   'Feeling lucky, punk?',
-  'Money trees are the perfect place for shade'
+  'Money trees are the perfect place for shade',
+  'Time to bisect'
 ]
 
 dieMap = ['A','B','C','D','E','F']
