@@ -30,7 +30,8 @@ sayings = [
   'and the number of the counting shall be three',
   'Four shalt thou not count',
   'neither count thou two',
-  'excepting that thou then proceed to three'  
+  'excepting that thou then proceed to three',
+  'IT GETS THE PEOPLE GOING'
 ]
 
 dieMap = ['A','B','C','D','E','F']
