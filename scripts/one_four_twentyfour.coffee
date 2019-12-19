@@ -2,7 +2,7 @@
 #   A drunkly coded, ASCII version of the famous game.
 #   Sort of assumes Campfire
 #   Game mechanics are easy: http://bruteforcex.blogspot.com/2008/03/1-4-24-dice-game.html
-# 
+#
 # Dependencies:
 #   None
 #
@@ -23,7 +23,9 @@
 sayings = [
   'I need a new pair of shoes',
   'Feeling lucky, punk?',
-  'Some new random line'
+  'Some new random line',
+  'Money trees are the perfect place for shade',
+  'Time to bisect'
 ]
 
 dieMap = ['A','B','C','D','E','F']
@@ -59,14 +61,14 @@ class BuddhaGame
         printlines[i] += dielines[i]
       @lastDice.push die
     printlines
-  
+
   roll: ->
-    "new game!\n" + 
+    "new game!\n" +
     @rollRemainingDice().join("\n")
-  
-  
+
+
   take: (diceToTake) ->
-    dieLetters = diceToTake.toUpperCase().replace(" ","").split("") 
+    dieLetters = diceToTake.toUpperCase().replace(" ","").split("")
     lastDiceLeftCount = @diceLeft
     for dieLetter in dieLetters
       dieIndex = dieMap.indexOf dieLetter
@@ -79,9 +81,9 @@ class BuddhaGame
 
     if @diceLeft == lastDiceLeftCount
       return "(you didn't pick any dice.)"
-    
+
     @steps += 1
-    
+
     printlines = ['','','','','','','']
     if @diceLeft > 1
       printlines = @rollRemainingDice()
@@ -91,22 +93,22 @@ class BuddhaGame
       die = @randomDice()
       @diceTaken.push die
       @diceLeft = 0
-      
+
     takenString = @diceTakenStringArray()
     for i in [0...printlines.length]
       printlines[i] += takenString[i]
-      
-    return_str = printlines.join("\n") + "\n" + @calculateScoreString() 
+
+    return_str = printlines.join("\n") + "\n" + @calculateScoreString()
 
     if @diceLeft >= 0
       return_str += "\n" + sayings[Math.floor(Math.random() * sayings.length)]
-    
+
     if @diceLeft <= 0
       return_str += "\nNice job!"
-    
+
     return_str
-    
-  scoreValue: ()->  
+
+  scoreValue: ()->
     score = 0
     has_one = no
     has_four = no
@@ -118,13 +120,13 @@ class BuddhaGame
         has_one = yes
       else
         score += dice_val
-    
+
     if @diceLeft <= 0 and (has_one == no or has_four == no)
       score = 0
-      
+
     {score:score,taken:@diceTaken,hasOne:has_one,hasFour:has_four,steps:@steps}
-  
-  
+
+
   calculateScoreString: () ->
     score = 0
     has_one = no
@@ -137,7 +139,7 @@ class BuddhaGame
         has_one = yes
       else
         score += dice_val
-    
+
     if @diceLeft <= 0 and (has_one == no or has_four == no)
       "score: 0 // bummer..."
     else if has_one == no and has_four == no
@@ -147,8 +149,8 @@ class BuddhaGame
     else if has_four == no and has_one == yes
       "score: #{score} (you still need to take a 4)"
     else
-      "score: #{score}" 
-        
+      "score: #{score}"
+
   diceTakenStringArray: () ->
     printlines = ['','','','','','','']
     has_one = no
@@ -167,16 +169,16 @@ class BuddhaGame
       for i in [0...printlines.length]
         printlines[i] += dielines[i]
     printlines
-    
+
   gameover: () ->
     if @diceLeft <= 0
       return true
     else
       return false
-    
+
   randomDice: () ->
     1 + Math.floor(Math.random() * 6)
-  
+
   diceString: (value,i,x) ->
     switch value
       when 1
@@ -239,10 +241,10 @@ class BuddhaGame
   --------- \n
       #{i}     \n
         "
-  
 
-    
-    
+
+
+
 
 class BuddhaLounge
   constructor: (@robot) ->
@@ -338,7 +340,7 @@ class BuddhaLounge
 module.exports = (robot) ->
 
   buddha = new BuddhaLounge robot
-  
+
   robot.hear /buddha start|dice start|bdstart/i, (msg) ->
     buddha.startGame msg, msg.message.user
 
